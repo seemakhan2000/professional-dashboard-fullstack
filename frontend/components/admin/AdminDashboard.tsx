@@ -188,7 +188,12 @@ export default function AdminDashboard({ onLogout }: AdminDashboardProps) {
 
   return (
     <div className="flex min-h-screen bg-gray-50">
-      <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+   <Sidebar
+  open={sidebarOpen}
+  onClose={() => setSidebarOpen(false)}
+  activePage="dashboard"
+  onPageChange={() => {}}
+/>
 
       <div className="flex min-w-0 flex-1 flex-col">
         <Navbar
